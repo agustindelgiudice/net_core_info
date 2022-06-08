@@ -498,18 +498,18 @@ namespace net_core_prueba
         static void Main(string[] args)
         {
 
-
+            //La coma significa que vamos a crear columnas y filas
             //Le indicamos al array que va a crear 2 filas y 2 columnas.
             //Dentro de las llaves creamos las filas y las columnas.
-            //Para poder crear las filas nuevamente colocar llaves.
-            //Ahora dentro de las llaves creamos las columnas que va a contener datos double y de tipo entero.
+            //Para poder crear las filas nuevamente colocamos las llaves.
+            //Dentro de las llaves creamos las columnas que va a contener datos double y de tipo entero.
             //tenemos el 6, el primer dato de tipo entero.
             //3.0 dato double.
             //De esta forma ya tendriamos creado el array multidimensional.
             
             double[,] doble = new double[2, 2] { {6,3.0 }, { 6.3,5.6 } };
 
-            Console.WriteLine("Resultado {0}", cadenas[0] + " " + name[3] + " age " + age[2]);
+            Console.WriteLine("Resultado {0}", doble[1,0]);
 
             Console.ReadLine();
 
