@@ -1,0 +1,15 @@
+/Users/md101/Projects/net_core_prueba/net_core_prueba/bin/Debug/net5.0/net_core_prueba.deps.json
+/Users/md101/Projects/net_core_prueba/net_core_prueba/bin/Debug/net5.0/net_core_prueba.runtimeconfig.json
+/Users/md101/Projects/net_core_prueba/net_core_prueba/bin/Debug/net5.0/net_core_prueba.runtimeconfig.dev.json
+/Users/md101/Projects/net_core_prueba/net_core_prueba/bin/Debug/net5.0/net_core_prueba.dll
+/Users/md101/Projects/net_core_prueba/net_core_prueba/bin/Debug/net5.0/ref/net_core_prueba.dll
+/Users/md101/Projects/net_core_prueba/net_core_prueba/bin/Debug/net5.0/net_core_prueba.pdb
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.csproj.AssemblyReference.cache
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.GeneratedMSBuildEditorConfig.editorconfig
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.AssemblyInfoInputs.cache
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.AssemblyInfo.cs
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.csproj.CoreCompileInputs.cache
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.dll
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/ref/net_core_prueba.dll
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.pdb
+/Users/md101/Projects/net_core_prueba/net_core_prueba/obj/Debug/net5.0/net_core_prueba.genruntimeconfig.cache
