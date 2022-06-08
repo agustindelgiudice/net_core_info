@@ -23,9 +23,13 @@
 //-------------------------------------------------------------------------------------------//
 
 
-//COMO SE HACEN LAS SOLICITUDES HTTP EN C SHARP
-//De esta forma estariamos trabajando asincronicamente junto con la palabra TASK
-//Para agregar el namespace adecuando hacer click derecho, acciones rapidas y refactorizaciones
+//SOLICITUDES HTTP EN C SHARP ->
+
+//Al agregar la palabra TASK, estariamos trabajando asincronicamente
+
+//Para agregar el namespace adecuando hacer click derecho, acciones rapidas y refactorizaciones.
+
+
 //using System.Net.Http;
 //using System.Threading.Tasks;
 //using System;
@@ -107,6 +111,7 @@
 //            //Variables de tipo string, float, double, decimal, int
 
 //            //despues de la cadena de texto, la variable que se asigne, va a empezar desde la posicion cero
+
 //            int year = Convert.ToInt16("20"); //dato de tipo entero se convierte a 12
 //            double doble = 2.5;
 //            string nombre = "Agustin"; //variable para crear una variable tipo cadena de texto
@@ -114,7 +119,7 @@
 //            decimal decimals = 2.07M;
 //            float flotante = 8.0F;
 //            bool valor = true;
-//            char letra = 'A'; //Almacena solo un caracter //con comillas dobles marcaria error porque solo para datos de tipo string o cadena de texto
+//            char letra = 'A'; //Almacena solo un caracter //con comillas dobles nos daria error porque solo para datos de tipo string o cadena de texto podemos usar el char
 //            Decimal de = 28.6M;
 //            Boolean valor2 = false;
 
@@ -163,10 +168,11 @@
 
 
 //-------------------------------------------------------------------------------------------//
-//OPERADOR DE INCREMENTO, LO QUE HARA ESTE OPERADOR SERÁ TOMAR LO QUE ESTÁ EN LA VARIABLE VALOR 2 (6)
-//LO VA A SUMAR CON EL DATO YA ALMACENADO EN LA VARIABLE VALOR 1, Y ESE DATO DE ESA SUMA SE LO VA A ASIGNAR NUEVAMENTE
-// A LA VARIABLE VALOR 1 PARA PODER ALMACENAR ESE RESULTADO EN LA VARIALBE VALOR 1, POR ESTE MOTIVO CONTIENE PRIMERO EL OPERADOR +
-// PARA PODER REALIZAR ESA SUMA Y LUEGO EL OPERADOR DE ASIGNACIÓN PARA ASIGNARLE ESE DATO A LA VARIABLE QUE ESTÁ A LA IZQUIERDA 
+/*
+LO QUE HARÁ EL OPERADOR DE INCREMENTO SERÁ TOMAR LO QUE ESTÁ EN LA VARIABLE valor2 = 6 LO VA A SUMAR CON EL DATO YA ALMACENADO EN LA VARIABLE valor1,
+Y ESE DATO DE ESA SUMA SE LO VA A ASIGNAR NUEVAMENTE A LA VARIALBE VALOR 1, PARA PODER ALMACENAR ESE RESULTADO EN LA VARIABLE valor1, POR ESTE MOTIVO
+CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGNACIÓN, PARA ASIGNARLE ESE DATO A LA VARIALBE QUE ESTÁ A LA IZQUIERDA
+*/
 
 //using System;
 
@@ -241,9 +247,10 @@
 //            bool data = valor1 != valor2;
 
 //            //Esta estructura solo evalúa los datos, el dato verdadero y el dato falso
-//            //Si nosotros colocamos el valor true dentro de los parentesis de esta condición
-//            //esto significa que vamos a ejecutar todo lo que se coloque dentro de las llaves
-//            //La diferencia entre el or || y el &&  
+//            /*Si nosotros colocamos el valor true dentro de los parentesis de esta condición
+//            esto significa que vamos a ejecutar todo lo que se coloque dentro de las llaves.
+//            */
+//            La diferencia entre el or || y el and && 
 
 //            if (valor1 != valor2 || valor3 == valor4)
 //            {
@@ -360,11 +367,13 @@
 //            // }
 
 
-//            //Este operador solo lo podremos utilizar cuando haremos un procedimiento como la estructura de arriba
-//            //Pero si vamos a utilizar una estructura para poder ejecutar mas lineas de código, no lo va a permitir.
+//            /*Este operador solo lo podremos utilizar cuando haremos un procedimiento como la estructura de arriba
+//            Pero si vamos a utilizar una estructura para poder ejecutar mas lineas de código, no lo va a permitir.
+//            */
 //            //Este operador solo funciona con esta estructura, para asignarle datos a una variable.
 
-//            //Operador que nos ayuda a simplificar la condicional
+//            //Operador que nos ayuda a simplificar la condicional.
+
 //            name = data ? "Agustin" : "Joel";
 //                Console.WriteLine("Resultado {0}", name);
 
@@ -444,8 +453,10 @@
 //            cadenas[3] = "Jose";
 //            cadenas[4] = "Joni";
 //            cadenas[5] = "Fulano";
-//            //Podemos obtener datos de la forma anterior y
-//            //podemos crear otro arreglo de esta forma
+//            /*
+//            Podemos obtener datos de la forma anterior y
+//            podemos crear otro arreglo de esta forma
+//            */
 //            string[] name = { "Agustin", "Nacho", "Nico", "Jose", "Joni", "Fulano" };
 //            int[] age = new int[5];
 //            age[0] = 5;
@@ -488,14 +499,14 @@ namespace net_core_prueba
         {
 
 
-            //Le indicamos al array que va a crear 2 filas y 2 columnas
-            //Dentro de las llaves creamos las filas y las columnas
-            //Para poder crear las filas nuevamente colocar llaves
-            //Ahora dentro de las llaves creamos las columnas que va a contener datos double y de tipo entero
-            //tenemos el 6, el primer dato de tipo entero
-            //3.0 dato double
-            //De esta forma ya tendriamos creado el array multidimensional
-
+            //Le indicamos al array que va a crear 2 filas y 2 columnas.
+            //Dentro de las llaves creamos las filas y las columnas.
+            //Para poder crear las filas nuevamente colocar llaves.
+            //Ahora dentro de las llaves creamos las columnas que va a contener datos double y de tipo entero.
+            //tenemos el 6, el primer dato de tipo entero.
+            //3.0 dato double.
+            //De esta forma ya tendriamos creado el array multidimensional.
+            
             double[,] doble = new double[2, 2] { {6,3.0 }, { 6.3,5.6 } };
 
             Console.WriteLine("Resultado {0}", cadenas[0] + " " + name[3] + " age " + age[2]);
