@@ -508,10 +508,17 @@ namespace net_core_prueba
             //De esta forma ya tendriamos creado el array multidimensional.
 
             //ARRAY BIDIMENSIONAL
-            double[,] doble = new double[2, 2] { {6,3.0 }, { 6.3,5.6 }; //En el primer corchete, espeficicar cuantas filas hay.
+            double[,] doble2 = new double[2, 2] { { 6, 3.0 }, { 6.3, 5.6 } }; //En el primer corchete, espeficicar cuantas filas hay.
+            //Console.WriteLine("Resultado {0}", doble2[2, 1]); //Al ser multidimensionales, tenemos que especificarle de donde queremos obtener datos.
+                                                              //Aquí le estamos espeficiando que queremos obtener datos de la fila numero 1, en la posicion 0.
 
-            Console.WriteLine("Resultado {0}", doble[2, 1]); //Al ser multidimensionales, tenemos que especificarle de donde queremos obtener datos.
-                                                               //Aquí le estamos espeficiando que queremos obtener datos de la fila numero 1, en la posicion 0.
+
+
+
+
+            //ARRAY TRIDIMENSIONAL //Donde vamos a crear [2, 2,3] dos filas, dos columnas y en esas columnas podremos almacenar 3 datos.
+            double[,,] doble3 = new double[2, 2, 3] { { {3.0,6.9,8.9 },{6.8,4.5,7.6 } },{ { 1.0, 2.9, 5.9 }, { 3.8, 3.5, 9.6 } } } ; // { {1 fila} }    { { {la columna } } }
+            Console.WriteLine("Resultado {0}", doble3[0, 1,2]);
 
             Console.ReadLine();
 
