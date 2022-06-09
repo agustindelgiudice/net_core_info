@@ -632,7 +632,7 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //        static void Main(string[] args)
 //        {
 
-            
+
 //            int pisos = 0;
 //            int[] arreglo = new int[1];
 //            //Mostramos un mensaje y capturalos el dalo ingresado desde la consola
@@ -684,6 +684,8 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //}
 
 //-------------------------------------------------------------------------------------------//
+//Introducción de selección switch
+
 //using System;
 
 //namespace net_core_prueba
@@ -693,7 +695,23 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //        static void Main(string[] args)
 //        {
 
-//            Console.WriteLine("Resultado {0}", doble3[0, 1, 2]);
+//            var data = 5;
+
+//            switch (data)
+//            {
+//                case "Agustin":
+//                    Console.WriteLine("Agu {0}", data);
+//                    break; 
+//                case "Alex":
+//                    Console.WriteLine("Del {0}", data);
+//                    break;
+
+
+//                default:
+//                    Console.WriteLine("Case {0}", "default");
+//                    break;
+//            }
+
 
 //            Console.ReadLine();
 
@@ -708,6 +726,47 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //}
 
 //-------------------------------------------------------------------------------------------//
+
+//SWITCH EXPRESSIONS #1
+
+using System;
+
+namespace net_core_prueba
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            var data = 5;
+
+            switch (data)
+            {
+                case "Agustin":
+                    Console.WriteLine("Agu {0}", data);
+                    break;
+                case "Alex":
+                    Console.WriteLine("Del {0}", data);
+                    break;
+
+
+                default:
+                    Console.WriteLine("Case {0}", "default");
+                    break;
+            }
+
+
+            Console.ReadLine();
+
+
+        }
+
+
+    }
+
+
+
+}
 
 //-------------------------------------------------------------------------------------------//
 //-------------------------------------------------------------------------------------------//
