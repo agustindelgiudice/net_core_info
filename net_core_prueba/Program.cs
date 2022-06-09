@@ -552,12 +552,12 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 
 //            }
 
-           
+
 //            Console.ReadLine();
 
 
 //        }
-        
+
 
 //    }
 
@@ -573,31 +573,56 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //-------------------------------------------------------------------------------------------//
 
 //LA ESTRUCTURA Bucle ciclo Foreach
+/*
+ 
+*/
+
+using System;
+
+namespace net_core_prueba
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] name = { "Agu", "Fran", "Nacho" };
+            int[] age = { 52, 42, 65 };
+            //for (int i = 0; i < name.Length; i++) 
+            //{
+            //    Console.WriteLine("Resultado {0}", name[i] + "age" + age[i] );
 
 
-//using System;
+            //}
 
-//namespace net_core_prueba
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
+            /*Estructura que tambien podemos obtener informacion en una coleccion de datos
+             se ha creado este objeto con la palabra var para poder indicar que es un objeto que va a
+            poder recibir cualquier tipo de dato, porque este objeto se va a definir cuando se le asigne un respectivo dato
+            bien sea un dato de tipo string o un dato de tipo entero o cualquier otro tipo de dato*/
+            //La palabra in que con esta palabra estamos indicando que vamos a obtener datos de una coleccion de datos.
+            //La palabra name significa que vamos a poder obtener datos del array name con los nombres indicados.
 
-//            Console.WriteLine("Resultado {0}", doble3[0, 1, 2]);
+            foreach (var item in name) //Este forEach es mas reducido, su sintaxis es mas adecuada para obtener informacion de una coleccion de datos.
+            {
+                Console.WriteLine("Resultado {0}", item);
 
-//            Console.ReadLine();
+            }
 
-
-//        }
-
-
-//    }
+            Console.ReadLine();
 
 
+        }
 
-//}
+
+    }
+
+
+
+}
+
 //-------------------------------------------------------------------------------------------//
+
+
 //using System;
 
 //namespace net_core_prueba
