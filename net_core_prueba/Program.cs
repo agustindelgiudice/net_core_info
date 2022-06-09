@@ -621,67 +621,67 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //}
 
 //-------------------------------------------------------------------------------------------//
-//TRIANGULO DE PASCAL /EJERCICIO CON TODO LO QUE VENIMOS VIENDO
-////Mettdos que podemos utilizar
-using System;
+////TRIANGULO DE PASCAL /EJERCICIO CON TODO LO QUE VENIMOS VIENDO
+//////Mettdos que podemos utilizar
+//using System;
 
-namespace net_core_prueba
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
 
             
-            int pisos = 0;
-            int[] arreglo = new int[1];
-            //Mostramos un mensaje y capturalos el dalo ingresado desde la consola
-            Console.WriteLine("Ingrese el numero de pisos");
-            pisos = Convert.ToInt16(Console.ReadLine());
-            /*Declaramos el primer ciclo for que va a recorrer dependiendo el dato ingresado que está almacenado
-             en la variable pisos*/
-            for (int i = 1; i <= pisos; i++)
-            {
-                /*Creamos otro arreglo dentro del ciclo for, y este arreglo se llamará PASCAL*/
-                /*Colocamos un arreglo y colocamos la variable i del ciclo for que será el tamaño que tendrá el arreglo cada vez
-                 que el ciclo for se ejecute.*/
-                int[] pascal = new int[i]; //de tipo entero
-                    //Ciclo for que se decrementa para formar el triangulo
-                    for (int j = pisos; j < i; j--)
-                {
-                    Console.Write(" ");
+//            int pisos = 0;
+//            int[] arreglo = new int[1];
+//            //Mostramos un mensaje y capturalos el dalo ingresado desde la consola
+//            Console.WriteLine("Ingrese el numero de pisos");
+//            pisos = Convert.ToInt16(Console.ReadLine());
+//            /*Declaramos el primer ciclo for que va a recorrer dependiendo el dato ingresado que está almacenado
+//             en la variable pisos*/
+//            for (int i = 1; i <= pisos; i++)
+//            {
+//                /*Creamos otro arreglo dentro del ciclo for, y este arreglo se llamará PASCAL*/
+//                /*Colocamos un arreglo y colocamos la variable i del ciclo for que será el tamaño que tendrá el arreglo cada vez
+//                 que el ciclo for se ejecute.*/
+//                int[] pascal = new int[i]; //de tipo entero
+//                    //Ciclo for que se decrementa para formar el triangulo
+//                    for (int j = pisos; j < i; j--)
+//                {
+//                    Console.Write(" ");
 
-                }
-                for (int k = 0; k < i; k++)
-                {
+//                }
+//                for (int k = 0; k < i; k++)
+//                {
 
-                    //Condicion que evalua la variable del ciclo for
-                    if (k == 0 || k == (i - 1))
-                    {
-                        pascal[k] = 1;
-                    }
-                    else
-                    {
-                        //Sumamos los numeros que están en cada posicion del arreglo para formar el triangulo
-                        pascal[k] = arreglo[k] + arreglo[k - 1];
-                    }
-                    Console.WriteLine("[" + pascal[k] + "]");
+//                    //Condicion que evalua la variable del ciclo for
+//                    if (k == 0 || k == (i - 1))
+//                    {
+//                        pascal[k] = 1;
+//                    }
+//                    else
+//                    {
+//                        //Sumamos los numeros que están en cada posicion del arreglo para formar el triangulo
+//                        pascal[k] = arreglo[k] + arreglo[k - 1];
+//                    }
+//                    Console.WriteLine("[" + pascal[k] + "]");
 
-                }
-                arreglo = pascal;
-                Console.WriteLine(" ");
-            }
-            Console.ReadLine();
-
-
-        }
+//                }
+//                arreglo = pascal;
+//                Console.WriteLine(" ");
+//            }
+//            Console.ReadLine();
 
 
-    }
+//        }
+
+
+//    }
 
 
 
-}
+//}
 
 //-------------------------------------------------------------------------------------------//
 //using System;
