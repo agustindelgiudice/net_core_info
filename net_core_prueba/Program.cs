@@ -489,60 +489,137 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //ARREGLOS MULTIDIMENSIONALES
 
 
-using System;
+//using System;
 
-namespace net_core_prueba
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
 
-            //La coma significa que vamos a crear columnas y filas
-            //Le indicamos al array que va a crear 2 filas y 2 columnas.
-            //Dentro de las llaves creamos las filas y las columnas.
-            //Para poder crear las filas nuevamente colocamos las llaves.
-            //Dentro de las llaves creamos las columnas que va a contener datos double y de tipo entero.
-            //tenemos el 6, el primer dato de tipo entero.
-            //3.0 dato double.
-            //De esta forma ya tendriamos creado el array multidimensional.
+//            //La coma significa que vamos a crear columnas y filas
+//            //Le indicamos al array que va a crear 2 filas y 2 columnas.
+//            //Dentro de las llaves creamos las filas y las columnas.
+//            //Para poder crear las filas nuevamente colocamos las llaves.
+//            //Dentro de las llaves creamos las columnas que va a contener datos double y de tipo entero.
+//            //tenemos el 6, el primer dato de tipo entero.
+//            //3.0 dato double.
+//            //De esta forma ya tendriamos creado el array multidimensional.
 
-            //ARRAY BIDIMENSIONAL
-            double[,] doble2 = new double[2, 2] { { 6, 3.0 }, { 6.3, 5.6 } }; //En el primer corchete, espeficicar cuantas filas hay.
-            //Console.WriteLine("Resultado {0}", doble2[2, 1]); //Al ser multidimensionales, tenemos que especificarle de donde queremos obtener datos.
-                                                              //Aquí le estamos espeficiando que queremos obtener datos de la fila numero 1, en la posicion 0.
-
-
+//            //ARRAY BIDIMENSIONAL
+//            double[,] doble2 = new double[2, 2] { { 6, 3.0 }, { 6.3, 5.6 } }; //En el primer corchete, espeficicar cuantas filas hay.
+//            //Console.WriteLine("Resultado {0}", doble2[2, 1]); //Al ser multidimensionales, tenemos que especificarle de donde queremos obtener datos.
+//                                                              //Aquí le estamos espeficiando que queremos obtener datos de la fila numero 1, en la posicion 0.
 
 
 
-            //ARRAY TRIDIMENSIONAL //Donde vamos a crear [2, 2,3] dos filas, dos columnas y en esas columnas podremos almacenar 3 datos.
-            double[,,] doble3 = new double[2, 2, 3] { { {3.0,6.9,8.9 },{6.8,4.5,7.6 } },{ { 1.0, 2.9, 5.9 }, { 3.8, 3.5, 9.6 } } } ; // { {1 fila} }    { { {la columna } } }
-            Console.WriteLine("Resultado {0}", doble3[0, 1,2]);
-
-            Console.ReadLine();
 
 
-        }
+//            //ARRAY TRIDIMENSIONAL //Donde vamos a crear [2, 2,3] dos filas, dos columnas y en esas columnas podremos almacenar 3 datos.
+//            double[,,] doble3 = new double[2, 2, 3] { { {3.0,6.9,8.9 },{6.8,4.5,7.6 } },{ { 1.0, 2.9, 5.9 }, { 3.8, 3.5, 9.6 } } } ; // { {1 fila} }    { { {la columna } } }
+//            Console.WriteLine("Resultado {0}", doble3[0, 1,2]);
+
+//            Console.ReadLine();
 
 
-    }
+//        }
+
+
+//    }
 
 
 
-}
+//}
+
+//-------------------------------------------------------------------------------------------//
+//BUCLE CICLO FOR
+
+
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            for (int i = 10; i > 0; i--)// con el i-- estamos decrementando
+//            {
+//                Console.WriteLine("Resultado {0}", i);
+
+
+//            }
+
+           
+//            Console.ReadLine();
+
+
+//        }
+        
+
+//    }
+
+
+
+//}
+
+
+
+
+
 
 //-------------------------------------------------------------------------------------------//
 
+//LA ESTRUCTURA Bucle ciclo Foreach
+
+
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            Console.WriteLine("Resultado {0}", doble3[0, 1, 2]);
+
+//            Console.ReadLine();
+
+
+//        }
+
+
+//    }
 
 
 
-
-
-
-
+//}
 //-------------------------------------------------------------------------------------------//
-//-------------------------------------------------------------------------------------------//
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            Console.WriteLine("Resultado {0}", doble3[0, 1, 2]);
+
+//            Console.ReadLine();
+
+
+//        }
+
+
+//    }
+
+
+
+//}
 
 //-------------------------------------------------------------------------------------------//
 
