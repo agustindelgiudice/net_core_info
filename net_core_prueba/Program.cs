@@ -577,6 +577,52 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
  
 */
 
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            string[] name = { "Agu", "Fran", "Nacho" };
+//            int[] age = { 52, 42, 65 };
+//            //for (int i = 0; i < name.Length; i++) 
+//            //{
+//            //    Console.WriteLine("Resultado {0}", name[i] + "age" + age[i] );
+
+
+//            //}
+
+//            /*Estructura que tambien podemos obtener informacion en una coleccion de datos
+//             se ha creado este objeto con la palabra var para poder indicar que es un objeto que va a
+//            poder recibir cualquier tipo de dato, porque este objeto se va a definir cuando se le asigne un respectivo dato
+//            bien sea un dato de tipo string o un dato de tipo entero o cualquier otro tipo de dato*/
+//            //La palabra in que con esta palabra estamos indicando que vamos a obtener datos de una coleccion de datos.
+//            //La palabra name significa que vamos a poder obtener datos del array name con los nombres indicados.
+
+//            foreach (var item in name) //Este forEach es mas reducido, su sintaxis es mas adecuada para obtener informacion de una coleccion de datos.
+//            {
+//                Console.WriteLine("Resultado {0}", item);
+
+//            }
+
+//            Console.ReadLine();
+
+
+//        }
+
+
+//    }
+
+
+
+//}
+
+//-------------------------------------------------------------------------------------------//
+//TRIANGULO DE PASCAL /EJERCICIO CON TODO LO QUE VENIMOS VIENDO
+////Mettdos que podemos utilizar
 using System;
 
 namespace net_core_prueba
@@ -586,28 +632,45 @@ namespace net_core_prueba
         static void Main(string[] args)
         {
 
-            string[] name = { "Agu", "Fran", "Nacho" };
-            int[] age = { 52, 42, 65 };
-            //for (int i = 0; i < name.Length; i++) 
-            //{
-            //    Console.WriteLine("Resultado {0}", name[i] + "age" + age[i] );
-
-
-            //}
-
-            /*Estructura que tambien podemos obtener informacion en una coleccion de datos
-             se ha creado este objeto con la palabra var para poder indicar que es un objeto que va a
-            poder recibir cualquier tipo de dato, porque este objeto se va a definir cuando se le asigne un respectivo dato
-            bien sea un dato de tipo string o un dato de tipo entero o cualquier otro tipo de dato*/
-            //La palabra in que con esta palabra estamos indicando que vamos a obtener datos de una coleccion de datos.
-            //La palabra name significa que vamos a poder obtener datos del array name con los nombres indicados.
-
-            foreach (var item in name) //Este forEach es mas reducido, su sintaxis es mas adecuada para obtener informacion de una coleccion de datos.
+            
+            int pisos = 0;
+            int[] arreglo = new int[1];
+            //Mostramos un mensaje y capturalos el dalo ingresado desde la consola
+            Console.WriteLine("Ingrese el numero de pisos");
+            pisos = Convert.ToInt16(Console.ReadLine());
+            /*Declaramos el primer ciclo for que va a recorrer dependiendo el dato ingresado que está almacenado
+             en la variable pisos*/
+            for (int i = 1; i <= pisos; i++)
             {
-                Console.WriteLine("Resultado {0}", item);
+                /*Creamos otro arreglo dentro del ciclo for, y este arreglo se llamará PASCAL*/
+                /*Colocamos un arreglo y colocamos la variable i del ciclo for que será el tamaño que tendrá el arreglo cada vez
+                 que el ciclo for se ejecute.*/
+                int[] pascal = new int[i]; //de tipo entero
+                    //Ciclo for que se decrementa para formar el triangulo
+                    for (int j = pisos; j < i; j--)
+                {
+                    Console.Write(" ");
 
+                }
+                for (int k = 0; k < i; k++)
+                {
+
+                    //Condicion que evalua la variable del ciclo for
+                    if (k == 0 || k == (i - 1))
+                    {
+                        pascal[k] = 1;
+                    }
+                    else
+                    {
+                        //Sumamos los numeros que están en cada posicion del arreglo para formar el triangulo
+                        pascal[k] = arreglo[k] + arreglo[k - 1];
+                    }
+                    Console.WriteLine("[" + pascal[k] + "]");
+
+                }
+                arreglo = pascal;
+                Console.WriteLine(" ");
             }
-
             Console.ReadLine();
 
 
@@ -621,8 +684,6 @@ namespace net_core_prueba
 }
 
 //-------------------------------------------------------------------------------------------//
-
-
 //using System;
 
 //namespace net_core_prueba
@@ -645,8 +706,6 @@ namespace net_core_prueba
 
 
 //}
-
-//-------------------------------------------------------------------------------------------//
 
 //-------------------------------------------------------------------------------------------//
 
