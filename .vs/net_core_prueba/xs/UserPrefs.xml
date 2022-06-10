@@ -2,19 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.net__core__prueba PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="net_core_prueba/Program.cs">
     <Files>
-      <File FileName="net_core_prueba/Program.cs" Line="648" Column="43" />
+      <File FileName="net_core_prueba/Program.cs" Line="751" Column="24" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="net_core_prueba" expanded="True">
-            <Node name="net_core_prueba" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

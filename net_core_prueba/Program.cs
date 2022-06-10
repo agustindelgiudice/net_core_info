@@ -738,14 +738,15 @@ namespace net_core_prueba
         static void Main(string[] args)
         {
 
-            var data = 5;
+            var data = Convert.ToInt32(5);
 
             switch (data)
             {
-                case "Agustin":
+                case "Agu":
                     Console.WriteLine("Agu {0}", data);
                     break;
-                case "Alex":
+
+                case "Del":
                     Console.WriteLine("Del {0}", data);
                     break;
 
