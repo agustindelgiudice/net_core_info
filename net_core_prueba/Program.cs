@@ -835,7 +835,12 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //-------------------------------------------------------------------------------------------//
 
 
-//LA ESTRUCTURA WHILE 
+//LA ESTRUCTURA WHILE
+
+/*En esta estructura lo que hay son dos variables, una con un valor booleano y otra con un valor de 1, 
+ cuando la ejecucion de nuestra aplicacion llegue a la siguiente linea de codigo, el dato que esté almacenado en la variable count se va a
+incrementar en 1 hasta que llegue a 6.
+ */
 
 //using System;
 
@@ -847,10 +852,10 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //        {
 
 //            var valor = true;
-//            var count = 1;
+//            var count = 1; //variable de tipo entero, la utilizamos para llevar un conteo
 //            while(valor)
 //            {
-//                if(count == 6 )
+//                if(count == 6 ) //hasta que llegue a 6, se va a ejecutar todo lo que esté dentro de las llaves.
 //                {
 //                    valor = false;
 //                }
@@ -895,7 +900,7 @@ namespace net_core_prueba
                     valor = false;
                 }
                 count++;
-                Console.WriteLine("Ejecución {0}", count);
+                Console.WriteLine("Ejecución del while {0}", count);
 
             }
 
@@ -903,7 +908,10 @@ namespace net_core_prueba
             Console.ReadLine();
 
 
-        }
+        } //Esta estructura practicamente es identica a la siguiente estructura
+        do {
+
+} while (true);
 
     }
 
