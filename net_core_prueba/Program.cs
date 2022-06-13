@@ -646,8 +646,8 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 //                /*Colocamos un arreglo y colocamos la variable i del ciclo for que será el tamaño que tendrá el arreglo cada vez
 //                 que el ciclo for se ejecute.*/
 //                int[] pascal = new int[i]; //de tipo entero
-//                    //Ciclo for que se decrementa para formar el triangulo
-//                    for (int j = pisos; j < i; j--)
+//                                           //Ciclo for que se decrementa para formar el triangulo
+//                for (int j = pisos; j < i; j--)
 //                {
 //                    Console.Write(" ");
 
@@ -669,9 +669,7 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 
 //                }
 //                arreglo = pascal;
-//                Console.WriteLine(" ");
 //            }
-//            Console.ReadLine();
 
 
 //        }
@@ -727,7 +725,157 @@ CONTIENE PRIMERO EL OPERADOR +, PARA PODER REALIZAR ESA SUMA Y LUEGO EL DE ASIGN
 
 //-------------------------------------------------------------------------------------------//
 
+////SWITCH EXPRESSIONS #1
+
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            var data = 3;
+//            var result = data switch
+//            {
+//                1 => "Alex", //Lo que hará esta linea es retornar el dato que está a la derecha.
+//                2 => "Joel", //Si colocamos el mismo dato de arriba, nos va a marcar error, tiene que ser un dato distintoç
+//                3 => "Agustin"
+//            };
+
+//            Console.WriteLine(result);
+//            Console.ReadLine();
+
+
+//        }
+
+
+//    }
+
+
+
+
+//}
+
+//-------------------------------------------------------------------------------------------//
+
 //SWITCH EXPRESSIONS #1
+
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            var data = 3;
+//            var result = data switch
+//            {
+//                1 => "Alex", //Lo que hará esta linea es retornar el dato que está a la derecha.
+//                2 => "Joel", //Si colocamos el mismo dato de arriba, nos va a marcar error, tiene que ser un dato distintoç
+//                3 => "Agustin"
+//            };
+
+//            Console.WriteLine(result);
+//            Console.ReadLine();
+
+
+//        }
+
+//    }
+
+
+
+
+//}
+
+
+//-------------------------------------------------------------------------------------------//
+
+//SWITCH EXPRESSIONS #2
+
+
+
+
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+
+//            var (a, b, opcion)
+// = (2, 6, "-");
+//            var result = opcion switch
+//            {
+//                "+" => a == b,
+//                "-" => a < b,
+//                "*" => b > a
+//            };
+//            Console.WriteLine(result);
+//            Console.ReadLine();
+
+
+//        }
+
+//    }
+
+
+
+
+//}
+
+
+//-------------------------------------------------------------------------------------------//
+
+
+//LA ESTRUCTURA WHILE 
+
+//using System;
+
+//namespace net_core_prueba
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+
+//            var valor = true;
+//            var count = 1;
+//            while(valor)
+//            {
+//                if(count == 6 )
+//                {
+//                    valor = false;
+//                }
+//                count++;
+//                Console.WriteLine("Ejecución {0}", count);
+
+//            }
+
+//            Console.WriteLine(valor);
+//            Console.ReadLine();
+
+
+//        }
+
+//    }
+
+
+
+
+//}
+
+//-------------------------------------------------------------------------------------------//
+
+//ESTRUCTURA DO WHILE
+
 
 using System;
 
@@ -738,42 +886,67 @@ namespace net_core_prueba
         static void Main(string[] args)
         {
 
-            var data = Convert.ToInt32(5);
-
-            switch (data)
+            var valor = true;
+            var count = 1;
+            while (valor)
             {
-                case "Agu":
-                    Console.WriteLine("Agu {0}", data);
-                    break;
+                if (count == 6)
+                {
+                    valor = false;
+                }
+                count++;
+                Console.WriteLine("Ejecución {0}", count);
 
-                case "Del":
-                    Console.WriteLine("Del {0}", data);
-                    break;
-
-
-                default:
-                    Console.WriteLine("Case {0}", "default");
-                    break;
             }
 
-
+            Console.WriteLine(valor);
             Console.ReadLine();
 
 
         }
 
-
     }
+
 
 
 
 }
 
 //-------------------------------------------------------------------------------------------//
+
 //-------------------------------------------------------------------------------------------//
 
 //-------------------------------------------------------------------------------------------//
+
 //-------------------------------------------------------------------------------------------//
+
 //-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------//
+
 
 
